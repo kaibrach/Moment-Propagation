@@ -17,6 +17,4 @@ If you use this code in academic context, please cite the following publication:
 }
 </pre>
 # Single-shot Bayesian approximation for neural networks
-Source Code for the
-If you use this code in academic context, please cite the following publication:
 coming soon...
