@@ -18,3 +18,35 @@ If you use this code in academic context, please cite the following publication:
 </pre>
 # Single-shot Bayesian approximation for neural networks
 coming soon...
+
+# Important Prerequisites
+1. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+2. [environment.yml](https://github.com/kaibrach/DNN-MP/blob/master/environment.yml) contains all modules you need
+
+# GPU Support for Tensorflow 2.3.1
+1. Download and Install [Cuda Tolkit 10.1 ](https://developer.download.nvidia.com/compute/cuda/10.1/Prod/network_installers/cuda_10.1.243_win10_network.exe)
+2. Download [Download cuDNN v7.6.5 (November 5th, 2019), for CUDA 10.1](https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.1_20191031/cudnn-10.1-windows10-x64-v7.6.5.32.zip) and copy the files in the zip file
+to `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1`
+
+# Work with Conda Environment
+
+1. Activate an existing conda environment: 
+
+        conda activate <envname>
+
+2. Export an existing conda environment (no build numbers): 
+
+        conda env export --no-builds -f <envname>.yml
+  
+3. Create an environment from config file: 
+        
+        conda env create -f <envname>.yml
+# Work with Jupyter Notebooks
+1. Activate an existing conda environment: 
+
+        conda activate <envname>
+2. Start Jupyter Notebook Server
+
+        jupyter notebook
+
