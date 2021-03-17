@@ -3,7 +3,7 @@ This repository contains the source code (as described in the publications below
 
 <img src="https://user-images.githubusercontent.com/49025372/111510086-b68f2c80-874d-11eb-8144-e3f8d21a8eb8.png" width="1000">
 
-# Single-Shot-MC-Dropout-Approximation
+# Single-Shot MC Dropout Approximation
 Source Code for the ICML 2020 Paper on Uncertainty &amp; Robustness in Deep Learning 
 
 If you use this code in academic context, please cite the following publication:
@@ -16,7 +16,7 @@ If you use this code in academic context, please cite the following publication:
   volume={abs/2007.03293}
 }
 </pre>
-# Single-shot Bayesian approximation for neural networks
+# Single-Shot Bayesian Approximation for Neural Networks
 coming soon...
 
 # Important Prerequisites
