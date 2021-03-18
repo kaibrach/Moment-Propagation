@@ -55,6 +55,7 @@ to `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1`
 
         jupyter notebook
 4. Kernel Errors
+
    If you found an Kernel error (Clicking on that red button gives more details about the error)
    `ImportError: DLL load failed while importing win32api: The specified module could not be found.`
    
