@@ -1,4 +1,4 @@
-name: tensorflow_mp_new
+name: tensorflow_mp
 channels:
   - defaults
 dependencies:
