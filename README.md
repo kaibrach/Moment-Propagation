@@ -22,8 +22,9 @@ coming soon...
 # Important Prerequisites
 I worked with `Conda` for creating the virtual environment and used `PIP` as package manager. Here are some useful links if you not familar with them:
 * [Overview: Conda vs PIP vs Venv](https://docs.conda.io/projects/conda/en/latest/commands.html#conda-vs-pip-vs-virtualenv-commands)
-* [PIP reference guide](https://pip.pypa.io/en/stable/reference/pip/)
-* [Conda reference guide](https://docs.conda.io/projects/conda/en/latest/commands.html#conda-general-commands)
+* [PIP commands guide](https://pip.pypa.io/en/stable/reference/pip/)
+* [Conda commands guide](https://docs.conda.io/projects/conda/en/latest/commands.html#conda-general-commands)
+* [Conda user guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/index.html)
 
 1. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
