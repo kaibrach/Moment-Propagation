@@ -71,7 +71,10 @@ to `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1`
 4. Kernel Errors
 
    If you found an Kernel error (Clicking on that red button gives more details about the error)
+   
    `ImportError: DLL load failed while importing win32api: The specified module could not be found.`
+   
+   You must run the comand prompt with administrator privilegs and execute the follwowing
    
        python [environment path]\Scripts\pywin32_postinstall.py -install
    
