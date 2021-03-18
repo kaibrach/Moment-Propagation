@@ -50,6 +50,13 @@ Nevertheless, feel free to update to TensorFlow 2.4.x, the source code should wo
 2. Export an existing conda environment (no build numbers): 
 
         conda env export --no-builds -f <envname>.yml
+      
+      Remove prefix line:
+      
+        conda env export --no-builds | findstr /b /V "prefix" > <envname>.yml (Windows)
+        conda env export --no-builds | grep -v "prefix" > <envname>.yml (Linux)
+        
+
   
 3. Create an environment from config file: 
         
