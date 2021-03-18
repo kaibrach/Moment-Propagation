@@ -27,7 +27,7 @@ I worked with `Conda` for creating the virtual environment and used `PIP` as pac
 
 1. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
-2. [environment.yml](https://github.com/kaibrach/DNN-MP/blob/master/environment.yml) contains all modules you need
+2. [environment.yml](https://github.com/kaibrach/Moment-Propagation/blob/master/environment.yml) contains all modules you need
 
 
 # GPU Support for TensorFlow 2.3.1
