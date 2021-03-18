@@ -29,6 +29,11 @@ coming soon...
 2. Download [Download cuDNN v7.6.5 (November 5th, 2019), for CUDA 10.1](https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.1_20191031/cudnn-10.1-windows10-x64-v7.6.5.32.zip) and copy the files in the zip file
 to `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1`
 
+I worked with `Conda` for creating the virtual environment and used `PIP` as package manager. Here are some useful links if you not familar with them:
+* [Overview: Conda vs PIP vs Venv](https://docs.conda.io/projects/conda/en/latest/commands.html#conda-vs-pip-vs-virtualenv-commands)
+* [PIP reference guide](https://pip.pypa.io/en/stable/reference/pip/)
+* [Conda reference guide](https://docs.conda.io/projects/conda/en/latest/commands.html#conda-general-commands)
+
 # Work with Conda Environment
 
 1. Activate an existing conda environment: 
