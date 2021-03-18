@@ -86,3 +86,16 @@ to `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1`
 
        jupyter kernelspec remove <kernelname>
 
+7. Jupyter extensions
+
+  There are a lot of configurable nbextensions that could be very useful
+  * Jupytext (creates py file from notebook, good for debugging)
+  * Scratchpad (Ctrl-B)
+  * Snippets
+  * Table of Contents
+  * ....
+
+  The extensions can be enabled via `nbextensions_configurator` (Nbextensions tab in the main window when starting jupyter) or
+  via commandline for example:
+        
+        jupyter nbextension enable --py widgetsnbextension
