@@ -1137,6 +1137,8 @@ class MP:
 
     def BatchNormalization(self, E, V, L):
         """
+          We use BatchNormalization only for Training==False, thus
+          Expectation and Variance should be a simple transformation.
           Todo: Batch_Normalization (check if the formula below is correct)
         :param E: Expectation from previous layer
         :param V: Variance from previous layer
@@ -1151,27 +1153,26 @@ class MP:
                 V = self._debug_output(V)
 
         if self._use_mp:
-            # E = (L.gamma * E) / (tf.sqrt(v + L.epsilon)) + (
-            #             L.beta - (L.gamma * m) / (tf.sqrt(v + L.epsilon)))
-            E = tf.nn.batch_normalization(E,
-                                          mean=L.moving_mean,
-                                          variance=L.moving_variance,
-                                          offset=L.beta,
-                                          scale=L.gamma,
-                                          variance_epsilon=L.epsilon)
+                # E_hat = (E - L.moving_mean) * 1.0 / (tf.sqrt(L.moving_variance + L.epsilon))
+                # E = L.gamma * E_hat + L.beta
+
+                E = tf.nn.batch_normalization(E,
+                                              mean=L.moving_mean,
+                                              variance=L.moving_variance,
+                                              offset=L.beta,
+                                              scale=L.gamma,
+                                              variance_epsilon=L.epsilon)
         else:
             E = L.output
 
         if V is not None:
+            # V = V * (L.gamma / (L.moving_variance + L.epsilon)) ** 2
             V = tf.nn.batch_normalization(V,
                                           mean= 0,#L.moving_mean,
                                           variance=L.moving_variance**2,
                                           offset=0,
                                           scale=L.gamma**2,
                                           variance_epsilon=L.epsilon)
-            #V = V * (L.gamma / (L.moving_variance + L.epsilon)) ** 2
-            #V = V * L.gamma**2 #(L.gamma / (L.moving_variance + L.epsilon)) ** 2
-            #V = V * (L.gamma / (v + L.epsilon)) ** 2
 
         return E, V
 
