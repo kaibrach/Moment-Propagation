@@ -42,18 +42,32 @@ to `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1`
 3. Create an environment from config file: 
         
         conda env create -f <envname>.yml
+        
+4. List conda environments
+
+        conda env list
+        
+5. Remove conda environments
+        
+        conda env remove -n <envname>
+
+
 # Work with Jupyter Notebooks
 1. Activate an existing conda environment: 
 
         conda activate <envname>
-2. Using virtual environment for jupyter kernels
+2. Adding Jupyter kernels 
+
+   If you want to use different virtual environments for jupyter kernels you have to execute the following in every conda environment.
+   Later you can see that there are different kernels in your Jupyter notebook you can choose.
 
         pip install ipykernel (if not already done)
-        python -m ipykernel install --user --name=tf_moment_propagation
+        python -m ipykernel install --user --name=<kernelname>
     
 3. Start Jupyter Notebook Server
 
         jupyter notebook
+        
 4. Kernel Errors
 
    If you found an Kernel error (Clicking on that red button gives more details about the error)
@@ -61,5 +75,11 @@ to `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1`
    
        python [environment path]\Scripts\pywin32_postinstall.py -install
    
-   
+5. List Jupyter kernels
+
+       jupyter kernelspec list
+
+6. Remove Jupyter kernels
+
+       jupyter kernelspec remove <kernelname>
 
