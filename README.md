@@ -30,10 +30,15 @@ I worked with `Conda` for creating the virtual environment and used `PIP` as pac
 2. [environment.yml](https://github.com/kaibrach/DNN-MP/blob/master/environment.yml) contains all modules you need
 
 
-# GPU Support for Tensorflow 2.3.1
+# GPU Support for TensorFlow 2.3.1
 1. Download and Install [Cuda Tolkit 10.1 ](https://developer.download.nvidia.com/compute/cuda/10.1/Prod/network_installers/cuda_10.1.243_win10_network.exe)
 2. Download [Download cuDNN v7.6.5 (November 5th, 2019), for CUDA 10.1](https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.1_20191031/cudnn-10.1-windows10-x64-v7.6.5.32.zip) and copy the files in the zip file
 to `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1`
+
+**Note:** 
+I did not update to TensorFlow 2.4.x because I ran into trouble with my GPU because TensorFlow >=2.4.0 needs CUDA 11. 
+Nevertheless, feel free to update to TensorFlow 2.4.x, the source code should work with this version also.
+[Here](https://www.tensorflow.org/install/gpu) you hand find some information about TensorFlow and GPU support
 
 
 # Work with Conda Environment
