@@ -10,13 +10,13 @@ If you use this code in academic context, please cite the following publication:
 <pre>
 @article{Brach2020SingleSM,
   title={Single Shot MC Dropout Approximation},
-  author={Kai Brach and B. Sick and Oliver D{\"u}rr},
+  author={Kai Brach and Beate Sick and Oliver D{\"u}rr},
   journal={ArXiv},
   year={2020},
   volume={abs/2007.03293}
 }
 </pre>
-# Single-Shot Bayesian Approximation for Neural Networks
+# Single-shot Bayesian approximation for neural networks
 coming soon...
 
 # Important Prerequisites
