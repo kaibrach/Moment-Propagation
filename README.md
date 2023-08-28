@@ -1,6 +1,6 @@
 # Moment Propagation 
 This repository contains the source code (as described in the publications below) to transform a given neural network (NN), trained with standard dropout beforehand, into a Bayesian Neural Network (BNN) that is able to approximate MC dropout in a single forward-pass by propagating the first two moments (Expectation E, Variance V) through the network layers.
-In general we are forwarding the first two moments through a neural network to increase accuracy of the point estimate and measure the predictive uncertainty in a single shot.
+In general we are forwarding the first two moments through a neural network to increase the networks accuracy and to measure the predictive uncertainty with a single forward-pass (single-shot).
 
 <img src="https://user-images.githubusercontent.com/49025372/111510086-b68f2c80-874d-11eb-8144-e3f8d21a8eb8.png" width="1000">
 
