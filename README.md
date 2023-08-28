@@ -6,7 +6,8 @@ In general we are forwarding the first two moments through a neural network to i
 
 # Single-Shot MC Dropout Approximation
 Source Code for the ICML 2020 Paper on Uncertainty &amp; Robustness in Deep Learning 
-[Paper](https://arxiv.org/abs/2007.03293)
+
+[Paper: Single-Shot MC Dropout Approximation](https://arxiv.org/abs/2007.03293)
 
 If you use this code in academic context, please cite the following publication:
 <pre>
@@ -21,7 +22,8 @@ If you use this code in academic context, please cite the following publication:
 # Single-shot Bayesian approximation for neural networks
 
 Source Code for the Moment-Propagation paper.
-[Paper](https://arxiv.org/abs/2308.12785) 
+
+[Paper: Single-shot Bayesian approximation for neural networks](https://arxiv.org/abs/2308.12785) 
 
 If you use this code in academic context, please cite the following publication:
 
